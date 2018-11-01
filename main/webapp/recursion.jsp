@@ -111,7 +111,7 @@ protected final class Tree
     
     public int getValue()
     {
-	//TODO
+	return value;
     }
     
     public ArrayList<Tree> getChildren()
