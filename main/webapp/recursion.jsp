@@ -72,11 +72,14 @@ public int factorial(int value)
 public int fibonacci(int n)
 {
 
+	int result = 0;
+	if (n == 1)
+	    return 1;
+	if (n==0)
+	    return 0;
+	return fibonacci(n-1) + fibonacci(n-2);
 
-	//TODO
-
-
-    
+}    
     /**
      * Class that represents a tree. This is a data structure comprised of several nodes. Each node may
      * have some number of "child" nodes. These are linked to via its "children" lists. Each node also
@@ -98,7 +101,6 @@ public int fibonacci(int n)
      * @author Stephen
      * @version 2018-04-23
      */
-}
 protected final class Tree
 {
     private ArrayList<Tree> children;
